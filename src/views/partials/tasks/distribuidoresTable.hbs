@@ -1,0 +1,37 @@
+
+<div class="container mt-5 mb-5">
+  <br>
+<h3>Registros</h3>
+<br>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Costo De Servicio</th>
+      <th scope="col">Origen</th>
+      <th scope="col">Destino</th>
+
+      <th scope="col">Acciones</th>
+ 
+    </tr>
+  </thead>
+  <tbody>
+  {{#each distribuidores}}
+
+    <tr>
+      <th scope="row">{{title}}</th>
+      <td>{{costoDeServicio}}</td>
+      <td>{{origen}}</td>
+      <td>{{destino}}</td>
+      <td> <a href="/distribuidores/delete/{{_id}}"><img src="https://cdn-icons-png.flaticon.com/512/1214/1214428.png" width="30" alt="" class="m-2"></a>
+      {{!-- <a href="/edit/{{_id}}" type="button"><img src="https://cdn-icons.flaticon.com/png/512/1024/premium/1024143.png?token=exp=1651777847~hmac=cd62943f38f84c07f79bda22146d5232" width="30" alt="" srcset="" class="m-2"></a> --}}
+      {{!-- <a href="/invoice/{{_id}}" ><img src="https://cdn-icons-png.flaticon.com/512/1/1755.png" width="30" alt="" class="m-2"></a> --}}
+      </td>
+    </tr>
+  {{/each}}
+
+   
+  </tbody>
+</table>
+
+</div>
